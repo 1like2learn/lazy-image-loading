@@ -3,7 +3,8 @@ import React, { useState } from "react";
  * Displays two versions of an image and displays the appropriate version depending
  * on the state of the higher quality one.
  */
-export default function ImageCont() {
+export default function ImageCont({imageData}) {
+    const { thumbnail, fullSize, alt} = imageData
     // Where we store the loaded state of the images
     const [ imageLoaded, setImageLoaded ] = useState(false);
 
@@ -14,13 +15,13 @@ export default function ImageCont() {
         <>
             <img 
                 className = {`genericImage image${imageLoaded? "Inv": "Vis"}`}
-                src = "https://forge-homework.s3.amazonaws.com/thumb.jpg" 
-                alt = "Istanbul street corner. Photographer: Sanaan Mazhar"
+                src = {thumbnail}
+                alt = {alt}
             />
             <img 
                 className = {`genericImage image${imageLoaded? "Vis": "Inv"}`}
-                src = "https://forge-homework.s3.amazonaws.com/fullsize.jpg" 
-                alt = "Istanbul street corner. Photographer: Sanaan Mazhar"
+                src = {fullSize} 
+                alt = {alt}
                 onLoad = { () => setImageLoaded(true)}
             />
         </>
