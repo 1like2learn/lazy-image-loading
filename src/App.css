@@ -1,3 +1,10 @@
+/* Makes app take up the entire width of it's container */
 .App {
-  text-align: center;
+  width: 100%;
+}
+
+/* Ensures the image doesn't cover the whole screen and is centered in it's container*/
+.genericImage {
+  width: 80%;
+  margin: 2% auto;
 }

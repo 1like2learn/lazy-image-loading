@@ -9,6 +9,7 @@ export default function ImageCont() {
     return (
         <>
             <img 
+                className = "genericImage"
                 src = "https://forge-homework.s3.amazonaws.com/thumb.jpg" 
                 alt = "Istanbul street corner. Photographer: Sanaan Mazhar"
                 style = {{
@@ -16,6 +17,7 @@ export default function ImageCont() {
                 }}
             />
             <img 
+                className = "genericImage"
                 src = "https://forge-homework.s3.amazonaws.com/fullsize.jpg" 
                 alt = "Istanbul street corner. Photographer: Sanaan Mazhar"
                 style = {{
