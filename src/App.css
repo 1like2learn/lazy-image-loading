@@ -1,10 +1,21 @@
 /* Makes app take up the entire width of it's container */
 .App {
   width: 100%;
+  position: relative;
 }
 
 /* Ensures the image doesn't cover the whole screen and is centered in it's container*/
 .genericImage {
   width: 80%;
   margin: 2% auto;
+  position: absolute;
+  transition: opacity 1s;
+}
+
+.imageInv {
+  opacity: 0;
+}
+
+.imageVis {
+  opacity: 1;
 }
