@@ -4,7 +4,10 @@
   position: relative;
 }
 
-/* Ensures the image doesn't cover the whole screen and is centered in it's container*/
+/** Ensures the image doesn't cover the whole screen and is centered in it's container.
+* Making the position of the image absolute ensures the two versions of the image take up the same space.
+* The transition property makes the switch between imageInv and imageVis gradual.
+*/
 .genericImage {
   width: 80%;
   margin: 2% auto;
