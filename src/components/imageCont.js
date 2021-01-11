@@ -11,12 +11,16 @@ export default function ImageCont() {
             <img 
                 src = "https://forge-homework.s3.amazonaws.com/thumb.jpg" 
                 alt = "Istanbul street corner. Photographer: Sanaan Mazhar"
-                style = {{display: imageLoaded? "none": "block"}}
+                style = {{
+                    display: imageLoaded? "none": "block",
+                }}
             />
             <img 
                 src = "https://forge-homework.s3.amazonaws.com/fullsize.jpg" 
                 alt = "Istanbul street corner. Photographer: Sanaan Mazhar"
-                style = {{display: imageLoaded? "block": "none"}}
+                style = {{
+                    display: imageLoaded? "block": "none",
+                }}
                 onLoad = { () => setImageLoaded(true)}
             />
         </>
